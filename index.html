@@ -3,314 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaVolt | Sustainable Hydro Solutions</title>
-    
+    <title>AquaVolt | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
     <style>
-        :root { 
-            --primary-blue: #007bff; 
-            --dark-navy: #0a192f; 
-            --accent-cyan: #00d4ff; 
-            --light-bg: #f8f9fa;
-        }
-        
-        body { 
-            font-family: 'Lexend', sans-serif; 
-            scroll-behavior: smooth; 
-            overflow-x: hidden;
-            color: #333;
-        }
-        
-        /* Navbar Customization */
-        .navbar { 
-            background-color: rgba(10, 25, 47, 0.95) !important; 
-            backdrop-filter: blur(10px); 
-            padding: 15px 0;
-        }
-        .navbar-brand { font-size: 1.6rem; letter-spacing: 1px; }
-        
-        /* Hero Section */
+        :root { --primary-blue: #007bff; --dark-navy: #0a192f; }
+        body { font-family: 'Lexend', sans-serif; scroll-behavior: smooth; }
         .hero-section {
             background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
                         url('https://images.unsplash.com/photo-1508433957232-3107f5ed2035?q=80&w=2000');
-            background-size: cover; 
-            background-position: center;
-            height: 100vh; 
-            display: flex; 
-            align-items: center; 
-            color: white;
+            background-size: cover; background-position: center;
+            height: 100vh; display: flex; align-items: center; color: white;
         }
-
-        .section-padding { padding: 100px 0; }
-        
-        /* Stats Counter */
-        .stats-box { 
-            background: var(--primary-blue); 
-            color: white; 
-            padding: 60px 0; 
-            border-bottom: 5px solid var(--accent-cyan);
-        }
-        
-        /* Tech Table */
-        .tech-table { 
-            background: white; 
-            border-radius: 20px; 
-            overflow: hidden; 
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1); 
-            border: 1px solid #eee; 
-        }
-        .table thead { background: var(--dark-navy); color: white; }
-        
-        /* Process Steps */
-        .process-step { 
-            border-left: 4px solid var(--primary-blue); 
-            padding-left: 25px; 
-            margin-bottom: 40px; 
-            position: relative; 
-        }
-        .process-step::before { 
-            content: ''; 
-            position: absolute; 
-            left: -10px; 
-            top: 0; 
-            width: 16px; 
-            height: 16px; 
-            background: var(--accent-cyan); 
-            border-radius: 50%; 
-        }
-
-        /* Contact Section Styling */
-        #contact { background-color: var(--dark-navy); color: white; }
-        .contact-card { 
-            background: rgba(255, 255, 255, 0.05); 
-            border: 1px solid rgba(255, 255, 255, 0.1); 
-            border-radius: 20px; 
-            padding: 40px; 
-        }
-        .form-control { 
-            background: rgba(255, 255, 255, 0.1); 
-            border: 1px solid rgba(255, 255, 255, 0.2); 
-            color: white; 
-            border-radius: 10px;
-        }
-        .form-control:focus { 
-            background: rgba(255, 255, 255, 0.15); 
-            color: white; 
-            border-color: var(--primary-blue); 
-            box-shadow: none; 
-        }
-        .form-control::placeholder { color: rgba(255, 255, 255, 0.4); }
-
-        footer { 
-            background: var(--dark-navy); 
-            color: #8892b0; 
-            border-top: 1px solid rgba(255, 255, 255, 0.1); 
-        }
+        .navbar { background-color: var(--dark-navy) !important; }
     </style>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">AQUA<span class="text-primary">VOLT</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand fw-bold" href="index.html">AQUA<span class="text-primary">VOLT</span></a>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fs-6">
-                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#tech">Technical Specs</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#process">How it Works</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="btn btn-primary ms-lg-3 px-4 shadow-sm" href="#contact">Send Proposal</a></li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tech.html">Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header id="home" class="hero-section text-center">
-        <div class="container" data-aos="fade-up">
-            <h1 class="display-1 fw-bold mb-3">Clean Energy <span class="text-primary">Redefined</span></h1>
-            <p class="lead fs-4 mb-5 mx-auto" style="max-width: 800px;">High-efficiency Archimedes Screw Turbines engineered for Large-Scale Agricultural and Government Irrigation Networks.</p>
+    <header class="hero-section text-center">
+        <div class="container" data-aos="zoom-out">
+            <h1 class="display-1 fw-bold mb-3">Powering Egypt's Future</h1>
+            <p class="lead fs-4 mb-5">Industrial Hydro Solutions for a Sustainable Tomorrow.</p>
             <div class="d-flex justify-content-center gap-3">
-                <a href="#tech" class="btn btn-primary btn-lg px-5 py-3 shadow rounded-pill">Technical Specs</a>
-                <a href="#process" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill">How it Works</a>
+                <a href="tech.html" class="btn btn-primary btn-lg px-5 shadow">Our Technology</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg px-5">Get in Touch</a>
             </div>
         </div>
     </header>
 
-    <section class="stats-box text-center shadow-lg">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up">
-                    <h2 class="fw-bold display-5">85%</h2>
-                    <p class="mb-0 text-uppercase tracking-wider">Peak Efficiency</p>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <h2 class="fw-bold display-5">Polymer-Based</h2>
-                    <p class="mb-0 text-uppercase tracking-wider">Non-Iron / Anti-Corrosive</p>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <h2 class="fw-bold display-5">24/7</h2>
-                    <p class="mb-0 text-uppercase tracking-wider">Renewable Power</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="tech" class="section-padding bg-light">
-        <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <span class="text-primary fw-bold">ENGINEERING DETAILS</span>
-                <h2 class="display-5 fw-bold mt-2">Technical Specifications</h2>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-10" data-aos="fade-up">
-                    <div class="tech-table p-4 bg-white shadow">
-                        <table class="table table-borderless fs-5 mb-0 text-start">
-                            <thead class="rounded">
-                                <tr class="bg-dark text-white">
-                                    <th class="py-3 px-4">Feature</th>
-                                    <th class="py-3 px-4">Our Standard</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-bottom">
-                                    <td class="py-3 px-4 fw-bold">Primary Material</td>
-                                    <td class="py-3 px-4 text-muted">High-Density Reinforced Polymers (PVC / Composites)</td>
-                                </tr>
-                                <tr class="border-bottom">
-                                    <td class="py-3 px-4 fw-bold">Turbine Design</td>
-                                    <td class="py-3 px-4 text-muted">Optimized Archimedes Screw for Low-Head Water Flow</td>
-                                </tr>
-                                <tr class="border-bottom">
-                                    <td class="py-3 px-4 fw-bold">Corrosion Level</td>
-                                    <td class="py-3 px-4 text-muted">Zero (100% Anti-Corrosive in Water)</td>
-                                </tr>
-                                <tr class="border-bottom">
-                                    <td class="py-3 px-4 fw-bold">Eco-Impact</td>
-                                    <td class="py-3 px-4 text-muted">Fish-Friendly Design & 100% Recyclable Materials</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-3 px-4 fw-bold">Output Type</td>
-                                    <td class="py-3 px-4 text-muted">Stable Off-Grid or Grid-Connected Electricity</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="process" class="section-padding">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6" data-aos="fade-right">
-                    <h2 class="display-5 fw-bold mb-5">The Mechanism</h2>
-                    <div class="process-step">
-                        <h4 class="fw-bold">01. Hydro Intake</h4>
-                        <p class="text-muted fs-5">Water from irrigation canals enters the screw system using natural gravity flow, requiring no external pumps.</p>
-                    </div>
-                    <div class="process-step">
-                        <h4 class="fw-bold">02. Mechanical Rotation</h4>
-                        <p class="text-muted fs-5">The water pressure turns the lightweight polymer screw, converting kinetic energy into torque.</p>
-                    </div>
-                    <div class="process-step">
-                        <h4 class="fw-bold">03. Electrical Generation</h4>
-                        <p class="text-muted fs-5">A high-performance alternator converts rotation into clean electricity for immediate use or grid supply.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1473876637604-03063200958a?q=80&w=1200" class="img-fluid rounded-5 shadow-lg" alt="Hydro Turbine">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="team" class="section-padding bg-light">
-        <div class="container text-center">
-            <h2 class="display-5 fw-bold mb-5" data-aos="fade-up">The Engineering Team</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-4" data-aos="zoom-in">
-                    <div class="bg-white p-5 rounded shadow-sm border-bottom border-primary border-4">
-                        <img src="https://via.placeholder.com/150" class="rounded-circle mb-4 border border-5 border-light" alt="Founder">
-                        <h4>Engineer Name</h4>
-                        <p class="text-primary mb-0 fw-bold">Project Lead</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="bg-white p-5 rounded shadow-sm border-bottom border-primary border-4">
-                        <img src="https://via.placeholder.com/150" class="rounded-circle mb-4 border border-5 border-light" alt="Founder">
-                        <h4>Engineer Name</h4>
-                        <p class="text-primary mb-0 fw-bold">Technical Expert</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section-padding">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-md-5" data-aos="fade-right">
-                    <h2 class="display-5 fw-bold mb-4">Official Contact</h2>
-                    <p class="fs-5 opacity-75 mb-4">Ready for partnership? Send us your technical inquiry or project proposal directly.</p>
-                    
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="bg-primary p-2 rounded me-3 shadow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 16 16">
-                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Z"/>
-                            </svg>
-                        </div>
-                        <span class="fs-6 fw-bold">eyad.2525006@stemelsadat.moe.edu.eg</span>
-                    </div>
-                </div>
-                
-                <div class="col-md-7" data-aos="fade-left">
-                    <div class="contact-card shadow-lg">
-                        <form action="mailto:eyad.2525006@stemelsadat.moe.edu.eg" method="post" enctype="text/plain">
-                            <div class="row g-3 text-start text-white">
-                                <div class="col-md-6">
-                                    <label class="form-label small">Full Name</label>
-                                    <input type="text" name="Name" class="form-control p-3" placeholder="Enter name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label small">Organization</label>
-                                    <input type="text" name="Organization" class="form-control p-3" placeholder="Ministry / Farm Name">
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label small">Message / Proposal</label>
-                                    <textarea name="Message" class="form-control p-3" rows="4" placeholder="Briefly describe your project..." required></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary btn-lg w-100 py-3 shadow fw-bold mt-2">Send Proposal to AquaVolt</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-5 text-center">
-        <div class="container">
-            <h4 class="fw-bold text-white mb-3">AQUA<span class="text-primary">VOLT</span></h4>
-            <p class="mb-4 text-white-50">Engineering Sustainable Hydro-Energy for Egypt's Future | STEM El Sadat City</p>
-            <div class="pt-4 border-top border-white-10 opacity-50">
-                <small>&copy; 2026 AquaVolt Energy Solutions. All Rights Reserved.</small>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1200, once: true });
-    </script>
+    <script>AOS.init();</script>
 </body>
 </html>
