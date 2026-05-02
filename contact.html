@@ -3,44 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaVolt | Contact & Team</title>
+    <title>AquaVolt | Founders & Team</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <style>
-        :root { --primary-blue: #007bff; --dark-navy: #0a192f; --accent-cyan: #00d4ff; }
-        body { font-family: 'Lexend', sans-serif; background-color: #f4f7f9; overflow-x: hidden; }
-        
+        :root { --primary-blue: #007bff; --dark-navy: #0a192f; }
+        body { font-family: 'Lexend', sans-serif; background-color: #f8f9fa; color: #333; }
         .navbar { background-color: var(--dark-navy) !important; padding: 15px 0; }
         
-        /* Header Section */
-        .page-header {
+        .header-section {
             background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), 
                         url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000');
             background-size: cover; background-position: center;
-            color: white; padding: 100px 0 60px; text-align: center;
+            color: white; padding: 80px 0; text-align: center;
         }
 
-        /* Team Cards Styling */
         .team-section { padding: 80px 0; }
         .team-card {
-            background: white; border-radius: 20px; padding: 30px;
+            background: white; border-radius: 20px; padding: 35px;
             transition: all 0.3s ease; border: none; text-align: center;
             height: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         }
         .team-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
         
-        .leader-card { border-top: 5px solid var(--primary-blue); background: linear-gradient(145deg, #ffffff, #f0f5ff); }
+        .leader-card { border-top: 6px solid var(--primary-blue); }
         .member-img { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-bottom: 20px; }
         
-        /* Contact Form */
-        .contact-section { background-color: var(--dark-navy); color: white; padding: 100px 0; }
-        .contact-info-card { background: rgba(255,255,255,0.05); padding: 40px; border-radius: 20px; height: 100%; }
-        .form-control { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 15px; }
+        .contact-box { background-color: var(--dark-navy); color: white; padding: 80px 0; border-radius: 30px; margin-bottom: 50px; }
+        .form-control { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; }
         .form-control:focus { background: rgba(255,255,255,0.15); color: white; border-color: var(--primary-blue); box-shadow: none; }
         
-        footer { background: #050c16; color: #8892b0; padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.05); }
+        footer { background: var(--dark-navy); color: #8892b0; padding: 30px 0; }
     </style>
 </head>
 <body>
@@ -48,45 +43,95 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">AQUA<span class="text-primary">VOLT</span></a>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link px-3" href="tech.html">Technology</a></li>
-                    <li class="nav-item"><a class="nav-link active px-3" href="contact.html">Contact & Team</a></li>
+                    <li class="nav-item"><a class="nav-link active px-3" href="contact.html">Founders</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="page-header">
+    <header class="header-section">
         <div class="container" data-aos="fade-up">
-            <h1 class="display-4 fw-bold">Meet the Founders</h1>
-            <p class="lead opacity-75">The innovative minds behind AquaVolt's sustainable hydro technology.</p>
+            <h1 class="display-4 fw-bold">The Founding Team</h1>
+            <p class="lead opacity-75">Innovative engineering students from STEM El Sadat City.</p>
         </div>
     </header>
 
     <section class="team-section container">
+        
         <div class="row justify-content-center mb-5">
-            <div class="col-md-8 text-center mb-4" data-aos="fade-up">
-                <h2 class="fw-bold text-dark">Project Leadership</h2>
-                <hr class="mx-auto border-primary border-3 opacity-100" style="width: 60px;">
-            </div>
             <div class="col-md-6" data-aos="zoom-in">
                 <div class="team-card leader-card shadow-lg">
                     <img src="eyad.jpg" class="member-img shadow" style="border: 5px solid var(--primary-blue);" alt="Eyad Amr">
                     <h3 class="fw-bold mb-1">Eyad Amr</h3>
-                    <div class="badge bg-primary mb-3 px-4 py-2 rounded-pill">FOUNDER & CHIEF DESIGNER</div>
-                    <p class="fw-bold text-dark mb-2">Technical Architect & Visionary</p>
-                    <p class="text-muted small">صاحب الرؤية والمصمم الرئيسي لأنظمة التوربينات المبتكرة؛ قاد عملية البحث والتصميم الهندسي لتحويل الفكرة إلى مشروع قومي مستدام.</p>
+                    <div class="badge bg-primary mb-3 px-4 py-2 rounded-pill">FOUNDER & CEO</div>
+                    <p class="fw-bold text-dark mb-2">Chief Technical Architect</p>
+                    <p class="text-muted small">Leading the project vision and turbine design. Expert in low-head hydro systems and overall project strategy.</p>
                 </div>
             </div>
         </div>
 
         <div class="row g-4 justify-content-center">
-            <div class="col-md-12 text-center mb-2" data-aos="fade-up">
-                <h2 class="fw-bold text-dark">Executive Team</h2>
-            </div>
             
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="team-card shadow">
-                    <img src="kareem.jpg"
+                    <img src="kareem.jpg" class="member-img shadow-sm" alt="Kareem Hassan">
+                    <h4 class="fw-bold">Kareem Hassan</h4>
+                    <div class="badge bg-warning text-dark mb-3 px-3 py-1 rounded-pill">COO</div>
+                    <p class="fw-bold text-primary mb-1">Operations Lead</p>
+                    <p class="text-muted small">Managing project operations and cross-functional coordination between design and fabrication.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-card shadow">
+                    <img src="sohaib.jpg" class="member-img shadow-sm" alt="Sohaib Kassem">
+                    <h4 class="fw-bold">Sohaib Kassem</h4>
+                    <div class="badge bg-dark mb-3 px-3 py-1 rounded-pill text-white">PROTOTYPING</div>
+                    <p class="fw-bold text-primary mb-1">Lead Fabricator</p>
+                    <p class="text-muted small">Responsible for physical prototyping and material testing of the Archimedes screw turbines.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="team-card shadow">
+                    <img src="mohamed.jpg" class="member-img shadow-sm" alt="Mohamed Sherif">
+                    <h4 class="fw-bold">Mohamed Sherif</h4>
+                    <div class="badge bg-success mb-3 px-3 py-1 rounded-pill">CRO</div>
+                    <p class="fw-bold text-primary mb-1">Head of Research</p>
+                    <p class="text-muted small">Leading scientific research, data analysis, and technical documentation of the project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <div class="contact-box shadow-lg">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center p-5">
+                    <h2 class="fw-bold mb-4">Official Inquiry</h2>
+                    <p class="lead opacity-75 mb-5">eyad.2525006@stemelsadat.moe.edu.eg</p>
+                    <form action="mailto:eyad.2525006@stemelsadat.moe.edu.eg" method="post" enctype="text/plain">
+                        <input type="text" class="form-control mb-3 p-3" placeholder="Full Name" required>
+                        <textarea class="form-control mb-3 p-3" rows="4" placeholder="Your Proposal..."></textarea>
+                        <button type="submit" class="btn btn-primary btn-lg w-100 py-3 shadow fw-bold">Submit to AquaVolt</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0 opacity-50">&copy; 2026 AquaVolt | STEM El Sadat City Innovation</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ duration: 1000, once: true }); </script>
+</body>
+</html>
